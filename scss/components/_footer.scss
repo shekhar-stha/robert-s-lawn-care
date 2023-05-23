@@ -1,0 +1,22 @@
+footer {
+    .footer-col {
+        @media only screen and (max-width: 1000px) {
+            text-align: left;
+        }
+
+        a {
+            color: #808080;
+        }
+
+        .text-info {
+            p {
+                margin-bottom: 0.5rem;
+
+                a {
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+}

@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage | Robert's Lawn Care</title>
 
+    <!-- favicion -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <link rel="stylesheet" href="./css/index.css">
 
     <!-- Slick CSS -->
@@ -27,19 +33,21 @@
         integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@nextaos.css" />
+
 </head>
 
 <body>
     <section>
         <!-- Top of the navbar -->
         <div class="bg-success top-information">
-            <div class="container bg-success py-3 d-flex justify-content-center">
+            <div class="container bg-success py-3 d-flex justify-content-between">
                 <div class="d-flex">
                     <p class="text-white fw-500"><i class="fs-15 fa-solid fa-phone"></i> +1 (737) 207-0337</p>
 
                     <p class="text-white fw-500 ms-4">
                         <span class="me-3"><i class="fs-15 me-1 fa-solid fa-location-dot"></i>Austin</span>
-                        <span><i class="fs-15 me-1 fa-solid fa-location-dot"></i> Texas</span>
                     </p>
                 </div>
             </div>
@@ -83,18 +91,22 @@
                                 </ul>
                             </li>
                         </ul>
-                        <button class="btn btn-success text-white fs-18 nav-button"> <i class="fa-regular fa-file-lines me-1"></i>
-                            Free
-                            Estimate</button>
+                        <!-- <button data-text="Awesome" class="nav-button">
+                            <span class="actual-text">&nbsp;Contact&nbsp;</span>
+                            <span class="hover-text" aria-hidden="true">&nbsp;Contact&nbsp;</span>
+                        </button> -->
+                        <button class="btn btn-success fw-500 text-white px-3 fs-19 "><i
+                                class="fa-regular fa-file-lines me-1"></i>Free Estimate</button>
                     </div>
                 </div>
             </nav>
 
             <!-- Hero Section -->
-            <div class="hero">
+            <div class="hero" data-aos="zoom-in">
                 <div class="container h-100">
                     <div class="d-flex flex-column justify-content-center h-75 pt-5">
-                        <h1 class="text-white mb-4">Elevate Your <span class="text-success">Outdoor</span> Space with Expert <span class="text-success">Lawn</span> Care Services</h1>
+                        <h1 class="text-white mb-4">Elevate Your <span class="text-success">Outdoor</span> Space with
+                            Expert <span class="text-success">Lawn</span> Care Services</h1>
                         <p class="text-white">
                             Transforming Austin, Texas Properties into Lush, Healthy, and
                             Enchanting
@@ -102,23 +114,339 @@
                         </p>
 
                         <div class="d-flex justify-content-center mt-5 pt-3 pb-lg-0 pb-3">
+
                             <button class="btn btn-outline-success border-2 me-4 px-4 fs-19">Contact Us</button>
                             <button class="btn btn-success text-white fs-19">Get Free Quote</button>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- <div class="slideshow position-absolute">
+                <div class="service-div">
+                    <img class="hero-img"
+                        src="/img/aerial-view-of-professional-garden-worker-with-pus-2022-11-15-13-38-11-utc.jpeg"
+                        alt="">
+                </div>
+                <div class="service-div">
+                    <img class="hero-img" src="/img/work1.jpeg" alt="">
+                </div>
+                <div class="service-div">
+                    <img class="hero-img" src="/img/work2.jpeg" alt="">
+                </div>
+            </div> -->
             <img class="hero-img"
                 src="/img/aerial-view-of-professional-garden-worker-with-pus-2022-11-15-13-38-11-utc.jpeg" alt="">
         </div>
 
     </section>
 
+    <section class="our-services mt-5">
+        <div class="container">
+            <div data-aos="fade-right" class="small-big-header">
+                <p>Our Services</p>
+                <h3>Transforming your lawn service experience</h3>
+            </div>
+            <div data-aos="fade-left" class="multiple-slides">
+                <div class="service-div">
+                    <img class="slider-img-full"
+                        src="/img/gardener-mowing-grass-and-cleaning-backyard-garden-2022-10-26-03-49-03-utc.jpeg"
+                        alt="">
+                    <div class="information">
+                        <h4>Lawn Care</h4>
+                        <p class="hidden-information">Professional maintenance services including mowing, edging,
+                            trimming, and fertilization for a
+                            healthy and well-groomed lawn. <a href="">Read More</a> </p>
+                    </div>
+                </div>
+
+                <div class="service-div">
+                    <img class="slider-img-full" src="/img/autumn-garden-works-2022-10-26-03-46-24-utc.jpg" alt="">
+                    <div class="information">
+                        <h4>Landscaping</h4>
+                        <p class="hidden-information">Customized landscape design and installation to create beautiful
+                            and functional outdoor spaces tailored to your preferences. <a href="">Read More</a> </p>
+                    </div>
+                </div>
+
+                <div class="service-div">
+                    <img class="slider-img-full" src="/img/Depositphotos_55825213_XL.jpg" alt="">
+                    <div class="information">
+                        <h4>Outdoor Living Spaces</h4>
+                        <p class="hidden-information"> Design and construction of outdoor living areas such as patios,
+                            decks, and fire pits, transforming your yard into an inviting and enjoyable space for
+                            relaxation and entertainment. <a href="">Read More</a> </p>
+                    </div>
+                </div>
+
+                <div class="service-div">
+                    <img class="slider-img-full" src="/img/jason-jarrach-QqXVYmXj8mk-unsplash.jpg" alt="">
+                    <div class="information">
+                        <h4>Land Clearing Services</h4>
+                        <p class="hidden-information">Professional clearing of overgrown properties, removal of trees,
+                            brush, and debris to prepare the land for new construction or to create a clean and open
+                            space. <a href="">Read More</a> </p>
+                    </div>
+                </div>
+
+                <div class="service-div">
+                    <img class="slider-img-full"
+                        src="/img/beautiful-garden-backyard-grass-mowing-2022-10-26-03-44-06-utc.jpeg" alt="">
+                    <div class="information">
+                        <h4>Lawn Mowing</h4>
+                        <p class="hidden-information">Regular cutting of grass to an appropriate height using
+                            professional equipment, ensuring an even and well-maintained appearance. <a href="">Read
+                                More</a> </p>
+                    </div>
+                </div>
+    </section>
+
+    <section class="why-us my-5">
+        <div class="container">
+            <div class="why-us-flex">
+                <div data-aos="fade-right" class="small-big-header col-lg-5">
+                    <p>Why Us</p>
+                    <h3>Why we are the best among all other guys?</h3>
+                    <span>
+                        Discover the compelling reasons why Robert's Lawn Care is the ultimate choice for your lawn care
+                        needs. With our expertise, impeccable quality, customer satisfaction focus, dependability,
+                        meticulous attention to detail, and hassle-free experience, we deliver breathtaking lawns that
+                        exceed expectations. Choose us for a lawn you'll love.</span>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-between">
+                    <div class="why-us-card me-lg-2">
+                        <img src="/img/trophy.png" alt="">
+                        <h4>Experience Matters</h4>
+                        <p>Trust our decade of expertise to transform your lawn into a breathtaking oasis.</p>
+                    </div>
+                    <div class="why-us-card ms-lg-2">
+                        <img src="/img/trophy.png" alt="">
+                        <h4>Uncompromising Excellence</h4>
+                        <p>xperience unparalleled excellence with our meticulous attention to detail.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gap-lg-4 mt-5">
+                <div class="why-us-card col">
+                    <img src="/img/trophy.png" alt="">
+                    <h4>Customer Satisfaction</h4>
+                    <p>Bringing your vision to life with attentive service and exceptional results.</p>
+                </div>
+                <div class="why-us-card col">
+                    <img src="/img/trophy.png" alt="">
+                    <h4>Trustworthy, Reliable</h4>
+                    <p>Your dependable partner for reliable service and exceptional results.</p>
+                </div>
+                <div class="why-us-card col">
+                    <img src="/img/trophy.png" alt="">
+                    <h4>Attention to Detail</h4>
+                    <p> Meticulous craftsmanship for breathtaking lawns with impeccable attention to detail.</p>
+                </div>
+                <div class="why-us-card col">
+                    <img src="/img/trophy.png" alt="">
+                    <h4>Hassle-Free Experience</h4>
+                    <p>Indulge in a hassle-free experience while we create and maintain your dream lawn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial my-3">
+        <div class="container py-5">
+            <div data-aos="fade-right" class="small-big-header">
+                <p>TESTIMONIALS</p>
+                <h3>See What Our Customers Say About Us</h3>
+            </div>
+            <div data-aos="fade-left" class="testimonial-carousel">
+                <!-- Inside the containing div, add one div for each slide -->
+                <div class="testimonial-card bg-white mx-3 my-3 rounded">
+                    <img class="quote-1" src="/img/quote.svg" alt="" />
+                    <div class="profile-info d-flex d-grid gap-4">
+                        <img class="rounded-circle" src="/img/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg" alt="" />
+                        <div class="">
+                            <h5 class="text-secondary">Sarah Johnson</h5>
+                            <p class="text-info mb-4">Austin</p>
+                        </div>
+                    </div>
+                    <p class="text-info mt-3">
+                        I'm thrilled with the lawn care services provided by Robert's Lawn Care. Their expert team
+                        consistently delivers exceptional results, keeping my Austin TX lawn in top shape. From
+                        professional mowing and weed control to attentive service, they are the best choice for
+                        maintaining a healthy and vibrant lawn.
+                    </p>
+                    <img class="quote-2" src="/img/quote.svg" alt="" />
+                </div>
+
+                <div class="testimonial-card bg-white mx-3 my-3 rounded">
+                    <img class="quote-1" src="/img/quote.svg" alt="" />
+                    <div class="profile-info d-flex d-grid gap-4">
+                        <img class="rounded-circle" src="/img/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg"
+                            alt="" />
+                        <div class="">
+                            <h5 class="text-secondary">John Davis</h5>
+                            <p class="text-info mb-4">Austin</p>
+                        </div>
+                    </div>
+                    <p class="text-info">
+                        Thanks to Robert's Lawn Care, my outdoor space has been transformed into a stunning landscape
+                        that stands out in Austin, TX. Their skilled team designed and installed a custom landscape that
+                        perfectly blends functionality and aesthetics. I highly recommend their landscaping services for
+                        anyone seeking top-notch design and installation
+                    </p>
+                    <img class="quote-2" src="/img/quote.svg" alt="" />
+                </div>
+
+                <div class="testimonial-card bg-white mx-3 my-3 rounded">
+                    <img class="quote-1" src="/img/quote.svg" alt="" />
+                    <div class="profile-info d-flex d-grid gap-4">
+                        <img class="rounded-circle" src="/img/christina-wocintechchat-com-SJvDxw0azqw-unsplash.jpg"
+                            alt="" />
+                        <div class="">
+                            <h5 class="text-secondary">Lisa Thompson</h5>
+                            <p class="text-info mb-4">Austin</p>
+                        </div>
+                    </div>
+                    <p class="text-info">
+                        I can't say enough about the exceptional lawn care services provided by Robert's Lawn Care. With
+                        their meticulous maintenance, my lawn near Austin, TX is now the envy of the neighborhood. Their
+                        comprehensive services, including lawn mowing, fertilization, and pest management, ensure a
+                        lush, weed-free lawn that impresses both guests and search engines
+                    </p>
+                    <img class="quote-2" src="/img/quote.svg" alt="" />
+                </div>
+
+                <div class="testimonial-card bg-white mx-3 my-3 rounded">
+                    <img class="quote-1" src="/img/quote.svg" alt="" />
+                    <div class="profile-info d-flex d-grid gap-4">
+                        <img class="rounded-circle" src="/img/lethicia-matos-CSh-hNHc3Y8-unsplash.jpg" alt="" />
+                        <div class="">
+                            <h5 class="text-secondary">Mark Wilson</h5>
+                            <p class="text-info mb-4">Austin</p>
+                        </div>
+                    </div>
+                    <p class="text-info">
+                        When it comes to land clearing services in Austin, TX, Robert's Lawn Care is the go-to choice.
+                        Their skilled team efficiently cleared my overgrown property, making way for my construction
+                        project. With their expertise in land clearing and brush removal, they offer reliable solutions
+                        that satisfy both customers and search engine rankings
+                    </p>
+                    <img class="quote-2" src="/img/quote.svg" alt="" />
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container rounded position-relative text-white px-4">
+        <div class="banner-new-talents">
+            <img class="position-absolute w-100 h-100 top-0 start-0 banner-image rounded"
+                src="https://cdn.asparksys.com/medias/1666164604459.png" alt="" />
+            <div
+                class="d-flex justify-content-lg-between justify-content-center text-lg-start text-center align-items-center px-lg-5 h-100 flex-lg-row flex-column">
+                <div>
+                    <h3 class="my-3 mt-0 mt-sm-3 text-white">Experience the beauty and tranquility of a perfectly
+                        manicured lawn."</h3>
+                        <p class="fs-18">
+                            <small class="fs-18">Contact us today for a free consultation and unlock the true potential of your
+                                outdoor space.</small>
+                        </p>
+                </div>
+
+                <button class="btn btn-light btn-lg rounded text-primary rounded-pill px-sm-5 px-3">
+                    <span class="h5">FIND CANDIDATES</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <hr />
+        <div class="container mt-5">
+            <div class="row fw-500 fs-16">
+                <div class="col-lg pe-lg-5 me-lg-5 col-12 mb-lg-0 mb-5 text-lg-left">
+                    <img src="/img/logowithoutbg.png" alt="logo" width="130" height="130"
+                        class="d-inline-block my-auto mb-3" />
+                    <div class="d-flex justify-content-lg-start justify-content-center">
+                        <a class="me-2" href=""><img src="https://cdn.asparksys.com/medias/1666170907576.png"
+                                alt="" /></a>
+                        <a class="me-2" href=""><img src="https://cdn.asparksys.com/medias/1666170955862.png"
+                                alt="" /></a>
+                        <a class="me-2" href=""><img src="https://cdn.asparksys.com/medias/1666171007314.png"
+                                alt="" /></a>
+                        <a class="me-2" href=""><img src="https://cdn.asparksys.com/medias/1666171052578.png"
+                                alt="" /></a>
+                        <a class="me-2" href=""><img src="https://cdn.asparksys.com/medias/1666171063385.png"
+                                alt="" /></a>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
+                    <p class="mb-3"><strong class="text-secondary h5 fw-600 fs-16"> Company</strong></p>
+                    <div class="text-info">
+                        <p><a href="">About Us</a></p>
+                        <p><a href="">Lawn Care</a></p>
+                        <p><a href="">Contact Us</a></p>
+                        <p><a href="">Lawn Mowing</a></p>
+                        <p><a href="">Land Clearing</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
+                    <p class="mb-3"><strong class="text-secondary h5 fw-600 fs-16"> Quick Links</strong></p>
+                    <div class="text-info">
+                        <p><a href="">Testimonials</a></p>
+                        <p><a href="">Services</a></p>
+                        <p><a href="">Our Works</a></p>
+                        <p><a href="">Why Us</a></p>
+                    </div>
+                </div>
+
+                <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
+                    <p class="mb-3"><strong class="text-secondary h5 fw-600 fs-16"> Contact us</strong></p>
+                    <div class="text-info">
+                        <p class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-envelope me-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                            </svg>
+                            Info@robertslawn.com
+                        </p>
+                        <p class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-telephone me-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                            </svg>
+                            <span> +1 (737) 207-0337</span>
+                        </p>
+                        <p class="d-flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt me-3" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                            <span>Austin, Texas USA</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4" />
+            <div
+                class="d-flex justify-content-sm-between flex-sm-row flex-column align-items-center text-info fw-500 pb-3">
+                <p>Ⓒ Robert's Land Service 2023. All rights reserved.</p>
+                <p>
+                    Powered by
+                    <a href="https://zappysites.com/" target="_blank" class="text-secondary">Zappy Sites</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer Section -->
 
 
 
     <!-- Scripts -->
-    <script src="/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
         integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -137,12 +465,20 @@
 
     <!-- Bootstrap -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
+
+    <script src="/js/index.js"></script>
+
+
+    <script src="https://unpkg.com/aos@nextaos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

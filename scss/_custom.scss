@@ -4,9 +4,9 @@
 
 /* Color Set */
 $primary: #EFFDEC;
-$secondary: #102b7b;
+$secondary: #0fbd57;
 $warning: #df3b2e;
-$success: #2ecc71;
+$success: #22d46c;
 // $danger: #ff4d00;
 $black: #302c2c;
 $white: #fcfef7;
@@ -125,6 +125,18 @@ p {
     color: $white;
 }
 
+.btn-success {
+    background-color: #0a9e48;
+
+}
+
+.btn-outline-success {
+    color: #0a9e48;
+    border-color: #0a9e48;
+}
+
+// Slick
+
 .slick-dots {
     display: flex !important;
     justify-content: center;
@@ -148,14 +160,64 @@ p {
     }
 
     li.slick-active button {
-        background-color: $primary;
+        background-color: $success;
         width: 2rem;
         border-radius: 20px;
-        margin-right: 1rem;
     }
 
     .slick-active {
         margin-right: 1rem;
+    }
+}
+
+.slick-slide {
+    margin: 0 20px;
+
+    @media (max-width: 575.98px) {
+        margin: 0 12px;
+    }
+}
+
+.slick-list {
+    margin: 0 -20px;
+
+    @media (max-width: 575.98px) {
+        margin: 0 -12px;
+    }
+}
+
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: $success;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.1rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.left-arrow {
+    left: -30px;
+}
+
+.right-arrow {
+    right: -30px;
+}
+
+.view-more {
+    font-weight: 500;
+    color: $black;
+
+    svg {
+        font-size: 12px;
+        padding-left: 6px;
     }
 }
 
@@ -166,8 +228,10 @@ p {
     padding: 0;
     font-family: "poppins", sans-serif;
     text-decoration: none !important;
-    transition: all 0.2s ease
+    transition: all 0.3s ease-in;
+    scroll-behavior: smooth;
 }
+
 
 a {
     color: #000000;

@@ -1,6 +1,7 @@
 .nav-hero {
     position: relative;
     height: 93vh;
+
     @media (max-width: 992px) {
         min-height: 93vh;
         height: auto;
@@ -21,6 +22,7 @@
             img {
                 width: 7rem;
                 object-fit: contain;
+
                 @media (max-width: 576px) {
                     width: 6rem;
                 }
@@ -31,12 +33,15 @@
             .nav-item {
                 font-weight: 500;
                 font-size: 18px;
+                margin: 0 1rem;
 
                 .nav-link {
                     color: $white !important;
                     position: relative;
+                    transition: all ease-in 0.3s;
+
                     @media (max-width: 992px) {
-                      text-align: center;
+                        text-align: center;
                     }
                 }
 
@@ -51,15 +56,27 @@
                     bottom: 0px;
                 }
 
+                .dropdown-toggle {
+                    position: inherit;
+                }
+
+                .dropdown-toggle:hover::after {
+                    width: 0;
+                    height: 0;
+                    position: inherit;
+                    background-color: none;
+                }
+
                 .active {
                     position: relative;
                     width: fit-content;
                     font-weight: 600;
                     color: $success !important;
+
                     @media (max-width: 992px) {
                         width: inherit;
                         text-align: center;
-                      }
+                    }
 
                     &::after {
                         content: "";
@@ -69,21 +86,22 @@
                         background-color: $success;
                         left: 0;
                         bottom: 0px;
+
                         @media (max-width: 992px) {
                             width: inherit;
                             text-align: center;
                             width: 0%;
                             height: 0px;
-                          }
+                        }
                     }
                 }
             }
         }
 
-        .nav-button{
+        .nav-button {
             @media (max-width: 992px) {
                 width: 100%;
-              }
+            }
         }
     }
 
@@ -92,10 +110,12 @@
             font-size: 54px;
             text-align: center;
             padding: 0 80px;
+
             @media (max-width: 992px) {
                 font-size: 44px;
                 padding: 0 20px;
             }
+
             @media (max-width: 576px) {
                 font-size: 33px;
                 padding: 0 7px;
@@ -106,6 +126,7 @@
             font-size: 18px;
             text-align: center;
             padding: 0 190px;
+
             @media (max-width: 992px) {
                 font-size: 17px;
                 padding: 0 50px;
@@ -113,3 +134,162 @@
         }
     }
 }
+
+.our-services {
+
+    .multiple-slides {
+
+        .service-div {
+            height: 20rem;
+            position: relative;
+            border-radius: 8px;
+            cursor: pointer;
+
+            .slider-img-full {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                position: absolute;
+                z-index: -1;
+                border-radius: 8px;
+                filter: brightness(80%);
+            }
+
+            .information {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: rgba(200, 255, 200, 0.1);
+                padding: 10px 0;
+                /* Light green background color with transparency */
+                transition: background-color 0.3s ease-in-out;
+            }
+
+            h4 {
+                margin-top: 0;
+                color: $white;
+                text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+                background-color: rgb(42, 156, 7);
+                margin-bottom: 2rem;
+                padding-left: 1.5rem;
+                padding: 0.3rem 1.5rem;
+                width: fit-content;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            p.hidden-information {
+                display: none;
+                padding: 0.3rem 1.5rem;
+                color: $white;
+                font-size: 15px;
+
+                a {
+                    color: $white;
+                    text-decoration: underline !important;
+                }
+            }
+
+            &:hover h4 {
+                background-color: transparent;
+                margin-bottom: 0;
+            }
+
+            &:hover .information {
+                background-color: rgba(25, 173, 25, 0.8);
+            }
+
+            &:hover p.hidden-information {
+                display: block;
+                animation: fade-in 0.8s ease-in-out;
+            }
+
+            // @keyframes fade-in {
+            //     0% {
+            //       opacity: 0;
+            //     }
+            //     100% {
+            //       opacity: 1;
+            //     }
+            //   }
+        }
+    }
+}
+
+.why-us {
+    .why-us-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .why-us-card {
+        border: none;
+        border-radius: 12px;
+        margin-bottom: 10px;
+        box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
+        padding: 1rem;
+
+        img {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 0.8rem;
+        }
+
+        h4 {
+            font-size: 1.20rem;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: .85rem;
+            line-height: 24px;
+            color: #6c757d;
+        }
+    }
+}
+
+
+
+
+/* Testimonial Card */
+.testimonial-card {
+    overflow: hidden;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.testimonial-card .quote-1 {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    top: 0px;
+    left: 0;
+}
+
+.testimonial-card .quote-2 {
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    bottom: 0px;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.testimonial-card img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+}
+
+/*banner*/
+.banner-new-talents {
+    height: 175px;
+  }
+  .banner-new-talents .banner-image {
+    z-index: -2;
+  }
+  
