@@ -218,10 +218,18 @@
 }
 
 .why-us {
-    .why-us-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: end;
+    .why-us-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1.5rem;
+        @media (max-width:992px) {
+            grid-template-columns: repeat(2,1fr);
+            gap: 2.2rem;
+        }
+        @media (max-width:576px) {
+            grid-template-columns: repeat(1,1fr);
+            gap: 2.2rem;
+        }
     }
 
     .why-us-card {
@@ -287,9 +295,7 @@
 
 /*banner*/
 .banner-new-talents {
-    height: 175px;
-  }
-  .banner-new-talents .banner-image {
-    z-index: -2;
-  }
-  
+    .banner-image {
+        z-index: -2;
+    }
+}
