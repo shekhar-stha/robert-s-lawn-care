@@ -4,9 +4,9 @@
 
 /* Color Set */
 $primary: #EFFDEC;
-$secondary: #1f3744;
+$secondary: #102b7b;
 $warning: #df3b2e;
-$success: #0DB760;
+$success: #2ecc71;
 // $danger: #ff4d00;
 $black: #302c2c;
 $white: #fcfef7;
@@ -166,6 +166,7 @@ p {
     padding: 0;
     font-family: "poppins", sans-serif;
     text-decoration: none !important;
+    transition: all 0.2s ease
 }
 
 a {
