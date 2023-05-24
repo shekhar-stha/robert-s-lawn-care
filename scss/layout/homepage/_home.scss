@@ -1,9 +1,111 @@
+.white-nav {
+    .nav-link {
+        color: $black !important;
+        position: relative;
+        transition: all ease-in 0.3s;
+
+        @media (max-width: 992px) {
+            text-align: center;
+        }
+    }
+    margin-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+nav {
+    .navbar-brand {
+        img {
+            width: 7rem;
+            object-fit: contain;
+
+            @media (max-width: 576px) {
+                width: 6rem;
+            }
+        }
+    }
+
+    ul {
+        .nav-item {
+            font-weight: 500;
+            font-size: 18px;
+            margin: 0 1rem;
+
+            .nav-link {
+                color: $white;
+                position: relative;
+                transition: all ease-in 0.3s;
+
+                @media (max-width: 992px) {
+                    text-align: center;
+                }
+            }
+
+            .nav-link:hover::after {
+                transition: all ease-in 0.3s;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: $success;
+                left: 0;
+                bottom: 0px;
+            }
+
+            .dropdown-toggle {
+                position: inherit;
+            }
+
+            .dropdown-toggle:hover::after {
+                width: 0;
+                height: 0;
+                position: inherit;
+                background-color: none;
+            }
+
+            .active {
+                position: relative;
+                width: fit-content;
+                font-weight: 600;
+                color: $secondary !important;
+
+                @media (max-width: 992px) {
+                    width: inherit;
+                    text-align: center;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $secondary;
+                    left: 0;
+                    bottom: 0px;
+
+                    @media (max-width: 992px) {
+                        width: inherit;
+                        text-align: center;
+                        width: 0%;
+                        height: 0px;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-button {
+        @media (max-width: 992px) {
+            width: 100%;
+        }
+    }
+}
+
 .nav-hero {
     position: relative;
     height: 93vh;
 
     @media (max-width: 992px) {
-        min-height: 93vh;
+        min-height: 70vh;
         height: auto;
     }
 
@@ -15,94 +117,6 @@
         filter: brightness(30%);
         z-index: -1;
         top: 0;
-    }
-
-    nav {
-        .navbar-brand {
-            img {
-                width: 7rem;
-                object-fit: contain;
-
-                @media (max-width: 576px) {
-                    width: 6rem;
-                }
-            }
-        }
-
-        ul {
-            .nav-item {
-                font-weight: 500;
-                font-size: 18px;
-                margin: 0 1rem;
-
-                .nav-link {
-                    color: $white !important;
-                    position: relative;
-                    transition: all ease-in 0.3s;
-
-                    @media (max-width: 992px) {
-                        text-align: center;
-                    }
-                }
-
-                .nav-link:hover::after {
-                    transition: all ease-in 0.3s;
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    height: 3px;
-                    background-color: $success;
-                    left: 0;
-                    bottom: 0px;
-                }
-
-                .dropdown-toggle {
-                    position: inherit;
-                }
-
-                .dropdown-toggle:hover::after {
-                    width: 0;
-                    height: 0;
-                    position: inherit;
-                    background-color: none;
-                }
-
-                .active {
-                    position: relative;
-                    width: fit-content;
-                    font-weight: 600;
-                    color: $success !important;
-
-                    @media (max-width: 992px) {
-                        width: inherit;
-                        text-align: center;
-                    }
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 3px;
-                        background-color: $success;
-                        left: 0;
-                        bottom: 0px;
-
-                        @media (max-width: 992px) {
-                            width: inherit;
-                            text-align: center;
-                            width: 0%;
-                            height: 0px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .nav-button {
-            @media (max-width: 992px) {
-                width: 100%;
-            }
-        }
     }
 
     .hero {
@@ -185,10 +199,10 @@
                 color: $white;
                 font-size: 15px;
 
-                a {
-                    color: $white;
-                    text-decoration: underline !important;
-                }
+                // a {
+                //     color: $white;
+                //     text-decoration: underline !important;
+                // }
             }
 
             &:hover h4 {
@@ -218,16 +232,18 @@
 }
 
 .why-us {
-    .why-us-grid{
+    .why-us-grid {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 1.5rem;
+
         @media (max-width:992px) {
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 2.2rem;
         }
+
         @media (max-width:576px) {
-            grid-template-columns: repeat(1,1fr);
+            grid-template-columns: repeat(1, 1fr);
             gap: 2.2rem;
         }
     }

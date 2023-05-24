@@ -4,7 +4,7 @@
 
 /* Color Set */
 $primary: #EFFDEC;
-$secondary: #0fbd57;
+$secondary: #0b7a39;
 $warning: #df3b2e;
 $success: #22d46c;
 // $danger: #ff4d00;
@@ -92,6 +92,10 @@ $grid-breakpoints: (
     font-size: 24px;
 }
 
+.fs-28 {
+    font-size: 28px;
+}
+
 h5 {
     font-size: 1rem;
     color: $black;
@@ -127,6 +131,7 @@ p {
 
 .btn-success {
     background-color: #0a9e48;
+    border-color: #0a9e48;
 
 }
 
@@ -205,10 +210,16 @@ p {
 
 .left-arrow {
     left: -30px;
+    @media (max-width: 768px) {
+        left: -5px;
+    }
 }
 
 .right-arrow {
     right: -30px;
+    @media (max-width: 768px) {
+        right: -5px;
+    }
 }
 
 .view-more {

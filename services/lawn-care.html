@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
 
     <!-- Slick CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
@@ -39,92 +39,77 @@
 </head>
 
 <body>
-    <section>
-        <!-- Top of the navbar -->
-        <div class="bg-secondary top-information">
-            <div class="container py-3 d-flex justify-content-between">
-                <p class="text-white fw-500 ms-4">
-                    <span class="me-3"><i class="fs-15 me-1 fa-solid fa-location-dot"></i>Austin, Texas</span>
-                </p>
 
-                <p class="text-white fw-500"><i class="fs-15 fa-solid fa-phone"></i> +1 (737) 207-0337</p>
-            </div>
+    <!-- Top of the navbar -->
+    <div class="bg-secondary top-information">
+        <div class="container py-3 d-flex justify-content-between">
+            <p class="text-white fw-500 ms-4">
+                <span class="me-3"><i class="fs-15 me-1 fa-solid fa-location-dot"></i>Austin, Texas</span>
+            </p>
+
+            <p class="text-white fw-500"><i class="fs-15 fa-solid fa-phone"></i> +1 (737) 207-0337</p>
         </div>
+    </div>
 
-        <!-- Navbar -->
-        <div class="nav-hero">
-            <nav class="navbar navbar-expand-lg navbar-dark ">
-                <div class="container">
-                    <a class="navbar-brand" href="#"><img src="/img/logo_1684381906_111-51_20white.png" alt=""></a>
+    <!-- Navbar -->
+    <div>
+        <nav class="white-nav navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="/img/logowithoutbg.png" alt=""></a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/contact.html">Contact</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Our Services
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/services/lawn-care.html">Lawn Care Service</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <!-- <button data-text="Awesome" class="nav-button">
-                            <span class="actual-text">&nbsp;Contact&nbsp;</span>
-                            <span class="hover-text" aria-hidden="true">&nbsp;Contact&nbsp;</span>
-                        </button> -->
-                                           <a class="btn btn-success fw-500 text-white px-3 fs-19 text-white" href="/cta.html">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Our Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <button data-text="Awesome" class="nav-button">
+                    <span class="actual-text">&nbsp;Contact&nbsp;</span>
+                    <span class="hover-text" aria-hidden="true">&nbsp;Contact&nbsp;</span>
+                </button> -->
+                    <a class="btn btn-success fw-500 text-white px-3 fs-19 text-white" href="/cta.html">
                         <i class="fa-regular fa-file-lines me-1"></i>Free
                         Estimate</a>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- Hero Section -->
-            <div class="hero" data-aos="zoom-in">
-                <div class="container h-100">
-                    <div class="d-flex flex-column justify-content-center h-75 pt-5">
-                        <h1 class="text-white mb-4">Elevate Your <span class="text-success">Outdoor</span> Space with
-                            Expert <span class="text-success">Lawn</span> Care Services</h1>
-                        <p class="text-white">
-                            Transforming Austin, Texas Properties into Lush, Healthy, and
-                            Enchanting
-                            Landscapes through Tailored Lawn Care Solutions
-                        </p>
-
-                        <div class="d-flex justify-content-center mt-5 pt-3 pb-lg-0 pb-3">
-
-                            <button class="btn btn-outline-success border-2 me-4 px-4 fs-19">Contact Us</button>
-                            <button class="btn btn-success text-white fs-19">Get Free Quote</button>
-                        </div>
-                    </div>
                 </div>
             </div>
-            <img class="hero-img"
-                src="/img/aerial-view-of-professional-garden-worker-with-pus-2022-11-15-13-38-11-utc.jpg" alt="">
-        </div>
+        </nav>
+    </div>
 
-    </section>
+    <div class="container pt-3">
+        <div class="contact-section__img">
+            <img src="/img/finishing-outdoor-backyard-garden-swimming-pool-ar-2022-10-26-03-43-38-utc-min.jpeg"
+                alt="About-section-img" class="img-fluid" />
+            <div class="position-absolute w-100 h-100 bg-secondary top-0 start-0 opacity-50 rounded-2"></div>
+            <h3 class="contact-section__title">Lawn Care</h3>
+        </div>
+    </div>
+
 
     <section class="our-services mt-5">
         <div class="container">
@@ -138,7 +123,7 @@
                         src="/img/gardener-mowing-grass-and-cleaning-backyard-garden-2022-10-26-03-49-03-utc.jpg"
                         alt="">
                     <div class="information">
-                        <h4>Lawn Care</h4>
+                        <h4>Edging</h4>
                         <p class="hidden-information">Professional maintenance services including mowing, edging,
                             trimming, and fertilization for a
                             healthy and well-groomed lawn. <a class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14" href="">Free Quote</a> </p>
@@ -148,7 +133,7 @@
                 <div class="service-div">
                     <img class="slider-img-full" src="/img/autumn-garden-works-2022-10-26-03-46-24-utc (1).jpg" alt="">
                     <div class="information">
-                        <h4>Landscaping</h4>
+                        <h4>Weed Control</h4>
                         <p class="hidden-information">Customized landscape design and installation to create beautiful
                             and functional outdoor spaces tailored to your preferences. <a class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14" href="">Free Quote</a> </p>
                     </div>
@@ -157,7 +142,7 @@
                 <div class="service-div">
                     <img class="slider-img-full" src="/img/Depositphotos_55825213_XL (1).jpg" alt="">
                     <div class="information">
-                        <h4>Outdoor Living Spaces</h4>
+                        <h4>Trimming</h4>
                         <p class="hidden-information"> Design and construction of outdoor living areas such as patios,
                             decks, and fire pits, transforming your yard into an inviting and enjoyable space for
                             relaxation and entertainment. <a class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14" href="">Free Quote</a> </p>
@@ -167,7 +152,7 @@
                 <div class="service-div">
                     <img class="slider-img-full" src="/img/jason-jarrach-QqXVYmXj8mk-unsplash (1).jpg" alt="">
                     <div class="information">
-                        <h4>Land Clearing Services</h4>
+                        <h4>Seasonal clean-up</h4>
                         <p class="hidden-information">Professional clearing of overgrown properties, removal of trees,
                             brush, and debris to prepare the land for new construction or to create a clean and open
                             space. <a class="btn btn-white bg-white text-info p-1 rounded-pill px-2 fs-14" href="">Free Quote</a> </p>
@@ -186,55 +171,6 @@
                 </div>
     </section>
 
-    <section class="why-us my-5">
-        <div class="container">
-            <div class="d-lg-flex justify-content-between align-items-end">
-                <div class="small-big-header col-lg-5">
-                    <p>Why Us</p>
-                    <h3>Why we are the best among all other guys?</h3>
-                    <span>
-                        Discover the compelling reasons why Robert's Lawn Care is the ultimate choice for your lawn care
-                        needs. With our expertise, impeccable quality, customer satisfaction focus, dependability,
-                        meticulous attention to detail, and hassle-free experience, we deliver breathtaking lawns that
-                        exceed expectations. Choose us for a lawn you'll love.</span>
-                </div>
-                <div class="col-lg-5 d-sm-flex justify-content-between mt-lg-0 mt-3">
-                    <div class="why-us-card me-lg-2 me-sm-3">
-                        <img src="/img/trophy.png" alt="">
-                        <h4>Experience Matters</h4>
-                        <p>Trust our decade of expertise to transform your lawn into a breathtaking oasis.</p>
-                    </div>
-                    <div class="why-us-card ms-lg-2 ms-sm-3">
-                        <img src="/img/trophy.png" alt="">
-                        <h4>Uncompromising Excellence</h4>
-                        <p>xperience unparalleled excellence with our meticulous attention to detail.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="why-us-grid mt-5">
-                <div class="why-us-card">
-                    <img src="/img/trophy.png" alt="">
-                    <h4>Customer Satisfaction</h4>
-                    <p>Bringing your vision to life with attentive service and exceptional results.</p>
-                </div>
-                <div class="why-us-card">
-                    <img src="/img/trophy.png" alt="">
-                    <h4>Trustworthy, Reliable</h4>
-                    <p>Your dependable partner for reliable service and exceptional results.</p>
-                </div>
-                <div class="why-us-card">
-                    <img src="/img/trophy.png" alt="">
-                    <h4>Attention to Detail</h4>
-                    <p> Meticulous craftsmanship for breathtaking lawns with impeccable attention to detail.</p>
-                </div>
-                <div class="why-us-card">
-                    <img src="/img/trophy.png" alt="">
-                    <h4>Hassle-Free Experience</h4>
-                    <p>Indulge in a hassle-free experience while we create and maintain your dream lawn.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="testimonial my-3">
         <div class="container py-5">
@@ -463,7 +399,7 @@
 
 
 
-    <script src="./js/index.js"></script>
+    <script src="/js/index.js"></script>
     <script src="https://unpkg.com/aos@nextaos.js"></script>
     <script>
         AOS.init();
