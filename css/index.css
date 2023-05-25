@@ -12403,6 +12403,92 @@ footer .footer-col .text-info p a {
   line-height: 25px;
 }
 
+.flex-description .leaf {
+  font-size: 20rem;
+  position: absolute;
+  color: #22d46c;
+  z-index: -1;
+  opacity: 0.2;
+  left: 0;
+  bottom: 4rem;
+}
+@media (max-width: 992px) {
+  .flex-description .leaf {
+    top: 8rem;
+    opacity: 0.15;
+  }
+}
+.flex-description .card {
+  transition: all 0.2s;
+  position: relative;
+  cursor: pointer;
+  height: 80%;
+  width: 80%;
+  margin-left: 1.5rem;
+}
+@media (max-width: 992px) {
+  .flex-description .card {
+    height: 100%;
+    width: 100%;
+    margin-left: 0rem;
+    margin-top: 3rem;
+  }
+}
+.flex-description .card img {
+  object-fit: cover;
+  max-height: 400px;
+}
+@media (max-width: 992px) {
+  .flex-description .card img {
+    max-height: 300px;
+  }
+}
+.flex-description .card .card-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+.flex-description .card .card:hover {
+  transform: scale(1.04);
+}
+.flex-description .card .circle {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#b0e633, #53ef7d);
+  border-radius: 50%;
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+  z-index: -1;
+}
+.flex-description .card .circle:nth-child(1) {
+  top: -25px;
+  right: -25px;
+}
+@media (max-width: 992px) {
+  .flex-description .card .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+}
+.flex-description .card .circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+
 .white-nav {
   margin-bottom: 2rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -12649,18 +12735,18 @@ nav ul .nav-item .active::after {
 
 .testimonial-card .quote-1 {
   position: absolute;
-  width: 25px;
-  height: 20px;
+  font-size: 2rem;
+  color: #22d46c;
   top: 0px;
   left: 0;
 }
 
 .testimonial-card .quote-2 {
   position: absolute;
-  width: 25px;
-  height: 20px;
+  font-size: 2rem;
   bottom: 0px;
   right: 0;
+  color: #22d46c;
   transform: rotate(180deg);
 }
 

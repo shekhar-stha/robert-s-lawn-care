@@ -288,18 +288,18 @@ nav {
 
 .testimonial-card .quote-1 {
     position: absolute;
-    width: 25px;
-    height: 20px;
+    font-size: 2rem;
+    color: $success;
     top: 0px;
     left: 0;
 }
 
 .testimonial-card .quote-2 {
     position: absolute;
-    width: 25px;
-    height: 20px;
+    font-size: 2rem;
     bottom: 0px;
     right: 0;
+    color: $success;
     transform: rotate(180deg);
 }
 
