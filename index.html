@@ -135,7 +135,7 @@
 
     </section>
 
-    <section class="why-us my-5">
+    <section id="#whyUs" class="why-us my-5">
         <div class="container">
             <div class="d-lg-flex justify-content-between align-items-end">
                 <div class="small-big-header col-lg-5">
@@ -185,7 +185,7 @@
         </div>
     </section>
 
-    <section class="our-services mt-5">
+    <section id="ourServices" class="our-services mt-5">
         <div class="container">
             <div class="small-big-header">
                 <p>Our Services</p>
@@ -252,7 +252,7 @@
                 </div>
     </section>
 
-    <section class="testimonial my-3">
+    <section id="testimonials" class="testimonial my-3">
         <div class="container py-5">
             <div class="small-big-header">
                 <p>TESTIMONIALS</p>
@@ -389,6 +389,8 @@
                     <a href="/services/lawn-care-near-austin.html"><i class="fa-solid fa-chevron-right"></i>Barton
                         Creek</a>
                 </div>
+
+                <a class="btn btn-primary fw-500 mt-5 btn-lg" href="/cta.html">Get Free Quote</a>
             </div>
             <div class="mt-lg-0 mt-5">
                 <img class="map img-fluid" src="/img/austin-map-removebg-preview.png" alt="">
@@ -525,21 +527,21 @@
                 <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
                     <p class="mb-3"><strong class="text-secondary h5 fw-600 fs-16"> Company</strong></p>
                     <div class="text-info">
-                        <p><a href="">About Us</a></p>
-                        <p><a href="">Lawn Care</a></p>
-                        <p><a href="">Contact Us</a></p>
-                        <p><a href="">Lawn Mowing</a></p>
-                        <p><a href="">Land Clearing</a></p>
+                        <p><a href="/services/land-clearing.html">Land Clearing</a></p>
+                        <p><a href="/services/lawn-care.html">Lawn Care</a></p>
+                        <p><a href="/contact.html">Contact Us</a></p>
+                        <p><a href="/services/lawn-mowing-near-austin.html">Lawn Mowing</a></p>
+                        <p><a href="/cta.html">Free Quote</a></p>
                     </div>
                 </div>
 
                 <div class="col-lg col-md-4 col-12 mb-lg-0 mb-4 footer-col text-left">
                     <p class="mb-3"><strong class="text-secondary h5 fw-600 fs-16"> Quick Links</strong></p>
                     <div class="text-info">
-                        <p><a href="">Testimonials</a></p>
-                        <p><a href="">Services</a></p>
-                        <p><a href="">Our Works</a></p>
-                        <p><a href="">Why Us</a></p>
+                        <p><a href="/index.html#faq">FAQ</a></p>
+                        <p><a href="/index.html#ourServices">Services</a></p>
+                        <p><a href="/index.html#testimonials">Testimonials</a></p>
+                        <p><a href="/index.html#whyUs">Why Us</a></p>
                     </div>
                 </div>
 
@@ -576,7 +578,7 @@
             </div>
             <hr class="mt-4" />
 
-            <p>Ⓒ Robert's Land Service 2023. All rights reserved.</p>
+           <p class="pt-2 pb-3 fw-500 text-info text-center">Ⓒ Robert's Land Service 2023. All rights reserved.</p>
         </div>
     </footer>
     <!-- End of Footer Section -->
@@ -584,24 +586,13 @@
 
 
     <!-- Scripts -->
-    <!-- Lightbox -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
-        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.js"
-        integrity="sha512-0rYcJjaqTGk43zviBim8AEjb8cjUKxwxCqo28py38JFKKBd35yPfNWmwoBLTYORC9j/COqldDc9/d1B7dhRYmg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
 
     <!-- Slick -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="./js/index.js"></script>
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -611,13 +602,8 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
 
+    <script src="/js/index.js"></script>
 
-
-    <script src="./js/index.js"></script>
-    <script src="https://unpkg.com/aos@nextaos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
