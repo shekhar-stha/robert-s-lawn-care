@@ -12491,7 +12491,7 @@ footer .footer-col .text-info p a {
 
 .white-nav {
   margin-bottom: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px 0px;
 }
 .white-nav .nav-link {
   color: #302c2c !important;
