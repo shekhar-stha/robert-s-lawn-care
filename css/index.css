@@ -12491,7 +12491,7 @@ footer .footer-col .text-info p a {
 
 .white-nav {
   margin-bottom: 2rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px -2px;
 }
 .white-nav .nav-link {
   color: #302c2c !important;
@@ -12563,7 +12563,7 @@ nav ul .nav-item .dropdown-item {
 }
 @media (max-width: 992px) {
   .nav-hero {
-    min-height: 70vh;
+    min-height: 74vh;
     height: auto;
   }
 }
@@ -12878,6 +12878,8 @@ nav ul .nav-item .dropdown-item {
   line-height: 96px;
   letter-spacing: 0.25px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+  white-space: nowrap;
 }
 @media (max-width: 1200px) {
   .contact-section__title {
@@ -12993,6 +12995,7 @@ nav ul .nav-item .dropdown-item {
 @media (max-width: 992px) {
   .contact-form-right__row {
     margin-top: 0px;
+    flex-direction: row-reverse;
   }
 }
 .contact-form-right__title {
