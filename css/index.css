@@ -12505,7 +12505,7 @@ footer .footer-col .text-info p a {
 }
 
 nav .navbar-brand img {
-  width: 7rem;
+  width: 10rem;
   object-fit: contain;
 }
 @media (max-width: 576px) {
@@ -12516,7 +12516,7 @@ nav .navbar-brand img {
 nav ul .nav-item {
   font-weight: 500;
   font-size: 18px;
-  margin: 0 1rem;
+  margin: 0 1.6rem;
 }
 nav ul .nav-item .nav-link {
   color: #fcfef7;
@@ -12660,10 +12660,14 @@ nav ul .nav-item .dropdown-item {
   animation: fade-in 0.8s ease-in-out;
 }
 
+.why-us .why-us-img {
+  object-fit: cover;
+}
 .why-us .why-us-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 @media (max-width: 992px) {
   .why-us .why-us-grid {
@@ -12677,26 +12681,37 @@ nav ul .nav-item .dropdown-item {
     gap: 2.2rem;
   }
 }
-.why-us .why-us-card {
+.why-us .why-us-grid .why-us-card {
   border: none;
   border-radius: 12px;
   margin-bottom: 10px;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.why-us .why-us-card img {
+.why-us .why-us-grid .why-us-card img {
   width: 70px;
   height: 70px;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
-.why-us .why-us-card h4, .why-us .why-us-card .h4 {
+.why-us .why-us-grid .why-us-card h4, .why-us .why-us-grid .why-us-card .h4 {
   font-size: 1.2rem;
   font-weight: 500;
 }
-.why-us .why-us-card p {
+.why-us .why-us-grid .why-us-card .info {
+  line-height: 24px;
+  color: #504e4b;
+}
+.why-us .why-us-grid .why-us-card .ratings {
   font-size: 0.85rem;
   line-height: 24px;
-  color: #6c757d;
+  color: #FF9529;
+  margin-top: 0.5rem;
+}
+.why-us .why-us-grid .why-us-card .ratings i {
+  font-size: 20px;
 }
 
 /* Testimonial Card */
@@ -12744,7 +12759,7 @@ nav ul .nav-item .dropdown-item {
   left: 0;
   z-index: -1;
   opacity: 0.9;
-  filter: brightness(50%);
+  filter: brightness(20%);
 }
 .service-areas .small-big-header p {
   color: #ffffff;

@@ -11,13 +11,12 @@
 
     margin-bottom: 2rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px 0px;
-
 }
 
 nav {
     .navbar-brand {
         img {
-            width: 7rem;
+            width: 10rem;
             object-fit: contain;
 
             @media (max-width: 576px) {
@@ -30,7 +29,7 @@ nav {
         .nav-item {
             font-weight: 500;
             font-size: 18px;
-            margin: 0 1rem;
+            margin: 0 1.6rem;
 
             .nav-link {
                 color: $white;
@@ -239,10 +238,15 @@ nav {
 }
 
 .why-us {
+    .why-us-img {
+        object-fit: cover;
+    }
+
     .why-us-grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
+        margin-bottom: 3rem;
 
         @media (max-width:992px) {
             grid-template-columns: repeat(2, 1fr);
@@ -253,30 +257,42 @@ nav {
             grid-template-columns: repeat(1, 1fr);
             gap: 2.2rem;
         }
-    }
 
-    .why-us-card {
-        border: none;
-        border-radius: 12px;
-        margin-bottom: 10px;
-        box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
-        padding: 1rem;
+        .why-us-card {
+            border: none;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            box-shadow: 0 3px 20px rgba(0, 0, 0, .1);
+            padding: 1.5rem 1rem;
+            display: flex; 
+            align-items: center;
+            flex-direction: column;
 
-        img {
-            width: 70px;
-            height: 70px;
-            margin-bottom: 0.8rem;
-        }
+            img {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 1rem;
+            }
 
-        h4 {
-            font-size: 1.20rem;
-            font-weight: 500;
-        }
+            h4 {
+                font-size: 1.20rem;
+                font-weight: 500;
+            }
 
-        p {
-            font-size: .85rem;
-            line-height: 24px;
-            color: #6c757d;
+            .info{
+                line-height: 24px;
+                color: #504e4b;
+            }
+
+            .ratings {
+                font-size: .85rem;
+                line-height: 24px;
+                color: #FF9529;
+                margin-top: 0.5rem;
+                i{
+                    font-size: 20px;
+                }
+            }
         }
     }
 }
@@ -333,7 +349,7 @@ nav {
         left: 0;
         z-index: -1;
         opacity: 0.9;
-        filter: brightness(50%);
+        filter: brightness(20%);
     }
 
     .small-big-header {
