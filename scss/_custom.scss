@@ -4,9 +4,9 @@
 
 /* Color Set */
 $primary: #EFFDEC;
-$secondary: #0b7a39;
+$secondary: #1C82AD;
 $warning: #df3b2e;
-$success: #22d46c;
+$success: #1C82AD;
 // $danger: #ff4d00;
 $black: #302c2c;
 $white: #fcfef7;
@@ -130,14 +130,14 @@ p {
 }
 
 .btn-success {
-    background-color: #0a9e48;
-    border-color: #0a9e48;
+    background-color: $success;
+    border-color: $success;
 
 }
 
 .btn-outline-success {
-    color: #0a9e48;
-    border-color: #0a9e48;
+    color: $success;
+    border-color: $success;
 }
 
 // Slick
