@@ -12011,6 +12011,11 @@ p {
   border-color: #1D267D;
 }
 
+.btn-outline-white {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
 .slick-dots {
   display: flex !important;
   justify-content: center;
@@ -12498,7 +12503,7 @@ footer .footer-col .text-info p a {
   position: relative;
   transition: all ease-in 0.3s;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .white-nav .nav-link {
     text-align: center;
   }
@@ -12513,7 +12518,7 @@ nav .navbar-brand img {
 }
 @media (max-width: 576px) {
   nav .navbar-brand img {
-    width: 6rem;
+    width: 8rem;
   }
 }
 nav ul .nav-item {
@@ -12527,7 +12532,7 @@ nav ul .nav-item .nav-link {
   transition: all ease-in 0.3s;
   font-weight: 500;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   nav ul .nav-item .nav-link {
     text-align: center;
   }
@@ -12554,7 +12559,7 @@ nav ul .nav-item .dropdown-toggle:hover::after {
 nav ul .nav-item .dropdown-item {
   text-shadow: none;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   nav .nav-button {
     width: 100%;
   }
@@ -12576,22 +12581,49 @@ nav ul .nav-item .dropdown-item {
   height: 100%;
   object-fit: cover;
   filter: brightness(20%);
-  z-index: -1;
+  z-index: -2;
   top: 0;
 }
 .nav-hero .hero .hero-info {
   padding-top: 100px;
+}
+@media (max-width: 992px) {
+  .nav-hero .hero .hero-info {
+    padding-top: 60px;
+  }
 }
 .nav-hero .hero .hero-info h1, .nav-hero .hero .hero-info .h1 {
   font-size: 54px;
   text-align: center;
   padding: 0 80px;
   text-shadow: 1px 1px 2px pink;
+  line-height: 80px;
+}
+.nav-hero .hero .hero-info h1 .underline, .nav-hero .hero .hero-info .h1 .underline {
+  position: relative;
+  z-index: 2;
+}
+.nav-hero .hero .hero-info h1 .underline::after, .nav-hero .hero .hero-info .h1 .underline::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: 11px;
+  width: 100%;
+  height: 10px;
+  background: #1D267D;
+  z-index: -1;
+  border-radius: 4px;
+}
+@media (max-width: 992px) {
+  .nav-hero .hero .hero-info h1 .underline::after, .nav-hero .hero .hero-info .h1 .underline::after {
+    left: 0px;
+  }
 }
 @media (max-width: 992px) {
   .nav-hero .hero .hero-info h1, .nav-hero .hero .hero-info .h1 {
     font-size: 44px;
     padding: 0 20px;
+    line-height: inherit;
   }
 }
 @media (max-width: 576px) {

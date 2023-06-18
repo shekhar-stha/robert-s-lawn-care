@@ -4,7 +4,7 @@
         position: relative;
         transition: all ease-in 0.3s;
 
-        @media (max-width: 992px) {
+        @media (max-width: 1200px) {
             text-align: center;
         }
     }
@@ -27,7 +27,7 @@ nav {
             object-fit: contain;
 
             @media (max-width: 576px) {
-                width: 6rem;
+                width: 8rem;
             }
         }
     }
@@ -44,7 +44,7 @@ nav {
                 transition: all ease-in 0.3s;
                 font-weight: 500;
 
-                @media (max-width: 992px) {
+                @media (max-width: 1200px) {
                     text-align: center;
                 }
             }
@@ -107,7 +107,7 @@ nav {
     }
 
     .nav-button {
-        @media (max-width: 992px) {
+        @media (max-width: 1200px) {
             width: 100%;
         }
     }
